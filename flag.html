@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Swedish Flag - Grid</title>
+  <style>
+    body {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .flag {
+      display: grid;
+      width: 320px;
+      height: 200px;
+      background-color: #006AA7;
+
+      /* Horizontal: 5:2:9 */
+      grid-template-columns: 5fr 2fr 9fr;
+
+      /* Vertical: 4:2:4 */
+      grid-template-rows: 4fr 2fr 4fr;
+    }
+
+    .cross-vertical {
+      grid-column: 2;
+      grid-row: 1 / 4;
+      background-color: #FECC00;
+    }
+
+    .cross-horizontal {
+      grid-column: 1 / 4;
+      grid-row: 2;
+      background-color: #FECC00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <div class="cross-vertical"></div>
+    <div class="cross-horizontal"></div>
+  </div>
+</body>
+
+</html>
