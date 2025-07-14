@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Properties Demo (Inline CSS)</title>
+</head>
+<body style="font-family: sans-serif; padding: 20px; background: #fafafa;">
+
+  <h1 style="text-align: center;">Flexbox Property Examples</h1>
+
+  <!-- display: flex -->
+  <h2>display: flex</h2>
+  <div style="display: flex; border: 1px solid #ccc; padding: 10px; background: #f0f0f0; min-height: 100px;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+  </div>
+
+  <!-- flex-direction -->
+  <h2>flex-direction: column</h2>
+  <div style="display: flex; flex-direction: column; border: 1px solid #ccc; padding: 10px; background: #f0f0f0; min-height: 100px;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+  </div>
+
+  <!-- justify-content -->
+  <h2>justify-content: space-between</h2>
+  <div style="display: flex; justify-content: space-between; border: 1px solid #ccc; padding: 10px; background: #f0f0f0; min-height: 100px;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+  </div>
+
+  <!-- align-items -->
+  <h2>align-items: flex-end</h2>
+  <div style="display: flex; align-items: flex-end; border: 1px solid #ccc; padding: 10px; background: #f0f0f0; min-height: 100px;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px; height: 40px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px; height: 70px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px; height: 100px;">3</div>
+  </div>
+
+  <!-- align-content -->
+  <h2>align-content: space-between</h2>
+  <div style="display: flex; flex-wrap: wrap; align-content: space-between; height: 200px; border: 1px solid #ccc; padding: 10px; background: #f0f0f0;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">4</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">5</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">6</div>
+  </div>
+
+  <!-- flex-wrap + gap -->
+  <h2>flex-wrap: wrap + gap</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; border: 1px solid #ccc; padding: 10px; background: #f0f0f0;">
+    <div style="background: #4caf50; color: white; padding: 10px;">1</div>
+    <div style="background: #4caf50; color: white; padding: 10px;">2</div>
+    <div style="background: #4caf50; color: white; padding: 10px;">3</div>
+    <div style="background: #4caf50; color: white; padding: 10px;">4</div>
+    <div style="background: #4caf50; color: white; padding: 10px;">5</div>
+    <div style="background: #4caf50; color: white; padding: 10px;">6</div>
+  </div>
+
+  <!-- flex shorthand -->
+  <h2>flex: grow shrink basis</h2>
+  <div style="display: flex; border: 1px solid #ccc; padding: 10px; background: #f0f0f0;">
+    <div style="flex: 1; background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="flex: 2; background: #4caf50; color: white; padding: 10px; margin: 5px;">2</div>
+    <div style="flex: 1; background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+  </div>
+
+  <!-- flex-grow, shrink, basis -->
+  <h2>flex-grow, shrink, basis</h2>
+  <div style="display: flex; border: 1px solid #ccc; padding: 10px; background: #f0f0f0;">
+    <div style="flex-grow: 2; background: #4caf50; color: white; padding: 10px; margin: 5px;">Grow</div>
+    <div style="flex-shrink: 2; width: 200px; background: #4caf50; color: white; padding: 10px; margin: 5px;">Shrink</div>
+    <div style="flex-basis: 150px; background: #4caf50; color: white; padding: 10px; margin: 5px;">Basis</div>
+  </div>
+
+  <!-- align-self -->
+  <h2>align-self: center</h2>
+  <div style="display: flex; align-items: flex-start; height: 150px; border: 1px solid #ccc; padding: 10px; background: #f0f0f0;">
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">1</div>
+    <div style="align-self: center; background: #4caf50; color: white; padding: 10px; margin: 5px;">2 (self)</div>
+    <div style="background: #4caf50; color: white; padding: 10px; margin: 5px;">3</div>
+  </div>
+
+</body>
+</html>

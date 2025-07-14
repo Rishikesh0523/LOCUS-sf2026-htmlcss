@@ -1,0 +1,20 @@
+/* Descendant selector (space): selects all p inside .parent, even nested */
+/* .parent p {
+  color: blue;
+} */
+
+/* Child selector (>): selects only direct p children of .parent */
+/* .parent > p {
+  font-weight: bold;
+} */
+
+/* Adjacent sibling selector (+): selects the first p right after h2 */
+/* h2 + p {
+  background-color: yellow;
+} */
+
+/* General sibling selector (~): selects all p after h2 inside same parent */
+/* h2 ~ p {
+  border-left: 4px solid green;
+  padding-left: 5px;
+} */

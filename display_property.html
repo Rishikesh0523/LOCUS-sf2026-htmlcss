@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Display Property</title>
+  <style>
+    .box1 {
+      background: teal;
+    }
+
+    .box2 {
+      background: cyan;
+    }
+
+    .box3 {
+      background: green;
+    }
+
+    .sized {
+      width: 150px;
+      height: 80px;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .none {
+      display: none;
+    }
+
+    .common {
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box1 sized block common">Box 1</div>
+  <div class="box2 sized inline common">Box 2</div>
+  <div class="box3 sized inline-block common">Box 3</div>
+  <div class="none common">Box 4</div>
+
+</body>
+</html>
